@@ -2,8 +2,7 @@
 theme = "hugo-story"
 
 ## Publish
-relativeURLs = "true"
-baseURL = "/"
+baseURL = "https://matthew-hollick.github.io/SerenitySpotWebsite/"
 publishDir = "public"
 
 ## Hugo Built-in Features
