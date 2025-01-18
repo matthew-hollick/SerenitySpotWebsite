@@ -17,8 +17,9 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.menu-section tr {
-    background-color: rgba(255, 255, 255, 0.9);
+.menu-section tbody tr,
+.menu-section tbody tr:nth-child(2n) {
+    background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .menu-section td {
