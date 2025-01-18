@@ -1,0 +1,55 @@
+.items.style1.medium section {
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    margin: 1em 0;
+    transition: background-color 0.3s ease;
+}
+
+.items.style1.medium section:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.items.style1.medium h3 {
+    color: inherit;
+    margin-bottom: 1em;
+}
+
+.items.style1.medium h4 {
+    color: inherit;
+    font-size: 1.1em;
+    margin: 1em 0 0.5em 0;
+}
+
+.items.style1.medium ul.alt {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1em 0;
+}
+
+.items.style1.medium ul.alt li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.items.style1.medium ul.alt li:last-child {
+    border-bottom: none;
+}
+
+.box {
+    margin-top: 3em;
+    padding: 2em;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.box p {
+    margin: 0;
+}
+
+p.major {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}

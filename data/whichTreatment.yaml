@@ -1,0 +1,40 @@
+title: "Which Treatment?"
+description: "Sometimes choosing a treatment can be difficult, which one will benefit you the most? We've made this easier for you by outlining common conditions and their recommended treatments."
+content: "It can be distracting trying to navigate through long descriptions of the massage when all you want to know is: What can it do for me? The Serenity Spot has made this easier for you."
+
+sections:
+  - condition: "Lymphatic System & Body Sculpting"
+    symptoms:
+      - "Lipoedema"
+      - "Post-surgery swelling"
+      - "Bloating"
+      - "Sluggish Lymphatic System"
+      - "Feeling Run Down"
+      - "Want to create some body definition"
+    treatments:
+      - "Brazilian Manual Lymphatic Drainage"
+      - "Body Sculpting Maderotherapy/Wood Therapy"
+
+  - condition: "Muscle Tension & Pain"
+    symptoms:
+      - "Sore muscles"
+      - "Muscle knots"
+      - "Tension"
+      - "Chronic muscle tightness"
+    treatments:
+      - "Deep Tissue Massage"
+      - "Warm Bamboo Massage"
+
+  - condition: "Relaxation & Wellbeing"
+    symptoms:
+      - "Difficulty Relaxing"
+      - "Poor Circulation"
+      - "Need some Me Time"
+      - "Stress and anxiety"
+    treatments:
+      - "Swedish Massage"
+      - "Aromatherapy Massage"
+      - "Indian Head Massage"
+      - "Hot Stone Massage"
+
+disclaimer: "Please note Massage or Holistic Treatments are never a substitute for medical advice or treatment. Massage and Holistics are Complementary by nature. Please always check with your Doctor if you are unsure that Massage or Holistic Treatments are for you."

@@ -1,0 +1,41 @@
+<!-- Banner -->
+<section class="banner {{ .style }}">
+    <div class="content">
+        {{ with .title }}<h1>{{ . }}</h1>{{ end }}
+        {{ with .subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}
+        {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .button }}<ul class="actions stacked">
+            <li><a href="{{ .url }}" style="background-color: #000000; color: #ffffff;" class="button primary large wide">{{ .text }}</a></li>
+        </ul>{{ end }}
+    </div>
+    {{ with .image }}<div class="image">
+        <img src="{{.}}" alt="The Serenity Spot" />
+    </div>{{end}}
+</section>
+
+<style>
+.banner .image {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.banner .image img {
+    object-fit: contain;
+    object-position: center;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 736px) {
+    .banner .image {
+        min-height: 400px;
+    }
+}
+</style>

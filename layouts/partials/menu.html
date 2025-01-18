@@ -1,0 +1,52 @@
+<!-- Menu -->
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <h2>{{ .title }}</h2>
+        <p>{{ .description }}</p>
+        
+        {{ range .sections }}
+        <div class="menu-section">
+            <h3>{{ .name }}</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Treatment</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range .items }}
+                            {{ $item := . }}
+                            {{ range $index, $duration := .durations }}
+                                <tr>
+                                    {{ if eq $index 0 }}
+                                    <td rowspan="{{ len $item.durations }}">
+                                        <strong>{{ $item.name }}</strong><br>
+                                        <span class="small">{{ $item.description }}</span>
+                                    </td>
+                                    {{ end }}
+                                    <td>{{ $duration.time }}</td>
+                                    <td>{{ $duration.price }}</td>
+                                </tr>
+                            {{ end }}
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {{ end }}
+
+        {{ if .notes }}
+        <div class="box">
+            <h4>Important Information</h4>
+            <ul class="alt">
+                {{ range .notes }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+</section>

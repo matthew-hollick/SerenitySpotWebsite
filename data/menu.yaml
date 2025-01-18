@@ -1,0 +1,87 @@
+title: "Treatment Menu"
+description: "Choose from our range of professional massage and holistic treatments"
+sections:
+  - name: "Massage Treatments"
+    items:
+      - name: "Deep Tissue Massage"
+        durations:
+          - time: "60 minutes"
+            price: "£60"
+          - time: "90 minutes"
+            price: "£85"
+        description: "A therapeutic massage focusing on deeper muscle layers to release tension and chronic muscle tightness"
+
+      - name: "Manual Lymphatic Drainage"
+        durations:
+          - time: "60 minutes"
+            price: "£60"
+          - time: "90 minutes"
+            price: "£85"
+        description: "A gentle but effective technique to support lymphatic flow and reduce swelling"
+
+      - name: "Swedish Massage"
+        durations:
+          - time: "60 minutes"
+            price: "£60"
+          - time: "90 minutes"
+            price: "£85"
+        description: "A relaxing full-body massage using long strokes to improve circulation and promote relaxation"
+
+      - name: "Aromatherapy Massage"
+        durations:
+          - time: "60 minutes"
+            price: "£65"
+          - time: "90 minutes"
+            price: "£90"
+        description: "A therapeutic massage using essential oils to enhance relaxation and well-being"
+
+      - name: "Hot Stone Massage"
+        durations:
+          - time: "60 minutes"
+            price: "£70"
+          - time: "90 minutes"
+            price: "£95"
+        description: "A deeply relaxing massage using heated stones to ease muscle tension"
+
+      - name: "Warm Bamboo Massage"
+        durations:
+          - time: "60 minutes"
+            price: "£70"
+          - time: "90 minutes"
+            price: "£95"
+        description: "A unique massage using warm bamboo sticks to work deep into the muscles"
+
+      - name: "Relaxation Massage"
+        durations:
+          - time: "60 minutes"
+            price: "£60"
+          - time: "90 minutes"
+            price: "£85"
+        description: "A soothing full-body massage designed to promote relaxation and reduce stress"
+
+  - name: "Specialized Treatments"
+    items:
+      - name: "Brazilian Manual Lymphatic Drainage"
+        durations:
+          - time: "60 minutes"
+            price: "£70"
+        description: "Specialized lymphatic drainage technique focusing on body sculpting and fluid retention"
+
+      - name: "Body Sculpting Maderotherapy"
+        durations:
+          - time: "60 minutes"
+            price: "£70"
+        description: "Wood therapy massage technique for body contouring and lymphatic drainage"
+
+      - name: "Indian Head Massage"
+        durations:
+          - time: "45 minutes"
+            price: "£45"
+        description: "Traditional head, neck and shoulder massage to relieve tension and promote relaxation"
+
+notes:
+  - "Please arrive 5-10 minutes before your appointment time"
+  - "Consultations are included in the treatment time"
+  - "Payment is required at the time of booking"
+  - "24-hour cancellation notice required"
+  - "Please note that massage treatments are complementary in nature and not a substitute for medical treatment"

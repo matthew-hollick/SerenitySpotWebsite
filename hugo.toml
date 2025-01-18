@@ -1,0 +1,32 @@
+## Basic Configuration
+theme = "hugo-story"
+
+## Publish
+relativeURLs = "true"
+baseURL = "/"
+publishDir = "public"
+
+## Hugo Built-in Features
+disableKinds = ["taxonomy", "section"]
+
+## Site Parameters
+title = "Serenity Spot - Professional Massage Therapy"
+languageCode = "en-us"
+
+[Params]
+  # Story theme parameters
+  background = "images/bg.jpg"
+  logo = "images/logo.png"
+  favicon = "favicon-32x32.png"
+  hideElements = ["elements_reference", "elements"] # Hide these sections
+  
+  # Contact form settings
+  [Params.contact]
+    enable = true
+    formAction = "" # Will be set up later with form handling service
+
+  # Social media links
+  [Params.social]
+    facebook = "https://facebook.com/serenityspot"
+    instagram = "https://instagram.com/serenityspot"
+    email = "contact@serenityspot.com"

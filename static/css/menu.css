@@ -1,0 +1,64 @@
+.menu-section {
+    margin: 2em 0;
+}
+
+.menu-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.menu-section th,
+.menu-section td {
+    padding: 1em;
+    text-align: left;
+}
+
+.menu-section th {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menu-section td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-section .small {
+    font-size: 0.9em;
+    opacity: 0.8;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.menu-section strong {
+    color: inherit;
+}
+
+.box {
+    margin-top: 3em;
+    padding: 2em;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.box h4 {
+    margin-bottom: 1em;
+    font-weight: 800;
+    font-size: 1.2em;
+    letter-spacing: 0.025em;
+    color: #000;
+}
+
+.box ul.alt {
+    list-style: none;
+    padding-left: 0;
+}
+
+.box ul.alt li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.box ul.alt li:last-child {
+    border-bottom: none;
+}

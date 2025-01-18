@@ -1,0 +1,12 @@
+title: "The Serenity Spot"
+subtitle: "Professional Holistic Therapy in Ash Vale"
+content: |
+  Hello! I'm Clare, a fully insured, experienced and highly qualified Holistic Therapist working from my tranquil treatment room in Ash Vale.
+  
+  <p class="highlight">Let me help you Find your Serenity</p>
+button:
+  text: "Book Now"
+  url: "https://bookings.gettimely.com/theserenityspot/book"
+  style: "button primary large wide smooth-scroll-middle black"
+image: "images/clare-portrait.jpg"
+style: "style3 orient-left content-align-left image-position-left onscroll-image-fade-in"

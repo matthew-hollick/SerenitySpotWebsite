@@ -1,0 +1,20 @@
+<!-- Testimonials -->
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <header>
+            <h2>{{ .title }}</h2>
+            <p>{{ .content }}</p>
+        </header>
+        <div class="items style1 medium onscroll-fade-in">
+            {{ range .testimonials }}
+            <section>
+                <header>
+                    <h3>{{ .title }}</h3>
+                </header>
+                <p class="testimonial-quote">"{{ .quote }}"</p>
+                <p class="testimonial-author">- {{ .author }}</p>
+            </section>
+            {{ end }}
+        </div>
+    </div>
+</section>

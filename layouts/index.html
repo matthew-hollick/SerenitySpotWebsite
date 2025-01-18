@@ -1,0 +1,12 @@
+{{ define "main" }}
+	{{ partial "banner" site.Data.banner }}
+	{{ partial "spotlight" site.Data.treatmentLymphaticDrainage }}
+	{{ partial "spotlight" site.Data.treatmentDeepTissue }}
+	{{ partial "spotlight" site.Data.treatmentRelaxation }}
+	{{ partial "treatment-guide" site.Data.whichTreatment }}
+	{{ partial "menu" site.Data.menu }}
+	{{ partial "gallery" site.Data.gallery }}
+	{{ partial "testimonials" site.Data.testimonials }}
+	{{ partial "items" site.Data.findUs }}
+	{{ partial "footer" . }}
+{{ end }}
