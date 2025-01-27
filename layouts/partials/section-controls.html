@@ -63,6 +63,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.wrapper.style1');
     
+    // Function to expand a section
+    function expandSection(section) {
+        if (section && !section.classList.contains('banner')) {
+            section.classList.remove('section-minimised');
+            // Store state in localStorage
+            const sectionId = section.id || '';
+            if (sectionId) {
+                localStorage.setItem('section-state-' + sectionId, 'false');
+            }
+        }
+    }
+    
     sections.forEach(section => {
         // Skip banner section
         if (section.classList.contains('banner')) return;
@@ -102,6 +114,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
+    });
+
+    // Handle hash changes (both on page load and navigation)
+    function handleHashChange() {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetSection = document.querySelector(hash);
+            if (targetSection) {
+                expandSection(targetSection);
+                // Smooth scroll after a brief delay to ensure the section is expanded
+                setTimeout(() => {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
+    }
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Handle hash on initial page load
+    if (window.location.hash) {
+        handleHashChange();
+    }
+
+    // Handle clicks on any links that point to sections
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                expandSection(targetSection);
+            }
+        });
     });
 });
 </script>
