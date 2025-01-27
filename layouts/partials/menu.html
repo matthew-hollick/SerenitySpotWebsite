@@ -1,21 +1,21 @@
 <!-- Menu -->
 <section class="wrapper style1 align-center" {{ with .id }}id="{{ . }}"{{ end }}>
-    <div class="inner">
-        <h2>{{ .title }}</h2>
-        <p>{{ .description }}</p>
-        
-        {{ range .sections }}
-        <div class="items style1 medium">
-            {{ range .items }}
-            <section>
-                <h3>{{ .name }}</h3>
-                <p>{{ .description }}</p>
-                {{ range .durations }}
-                <p><strong>{{ .time }}</strong> - {{ .price }}</p>
+    {{ template "section-header" . }}
+    <div class="section-content">
+        <div class="inner">
+            {{ range .sections }}
+            <div class="items style1 medium">
+                {{ range .items }}
+                <section>
+                    <h3>{{ .name }}</h3>
+                    <p>{{ .description }}</p>
+                    {{ range .durations }}
+                    <p><strong>{{ .time }}</strong> - {{ .price }}</p>
+                    {{ end }}
+                </section>
                 {{ end }}
-            </section>
+            </div>
             {{ end }}
         </div>
-        {{ end }}
     </div>
 </section>

@@ -1,0 +1,96 @@
+{{ define "section-header" }}
+<div class="section-header">
+    <div class="section-title">
+        {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .description }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <button class="section-toggle" aria-label="Toggle section">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</div>
+{{ end }}
+
+<style>
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.section-title {
+    flex: 1;
+}
+
+.section-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5em;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.section-toggle:hover {
+    opacity: 0.8;
+}
+
+.section-minimised .section-toggle {
+    transform: rotate(180deg);
+}
+
+.section-content {
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 2000px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.section-minimised .section-content {
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.wrapper.style1');
+    
+    sections.forEach(section => {
+        // Skip banner section
+        if (section.classList.contains('banner')) return;
+        
+        const header = section.querySelector('.section-header');
+        if (!header) return;
+        
+        const toggle = header.querySelector('.section-toggle');
+        const content = section.querySelector('.section-content');
+        
+        if (!toggle || !content) return;
+        
+        toggle.addEventListener('click', () => {
+            section.classList.toggle('section-minimised');
+            
+            // Store state in localStorage
+            const sectionId = section.id || '';
+            if (sectionId) {
+                localStorage.setItem(
+                    'section-state-' + sectionId,
+                    section.classList.contains('section-minimised')
+                );
+            }
+        });
+        
+        // Restore state from localStorage
+        const sectionId = section.id || '';
+        if (sectionId) {
+            const isMinimised = localStorage.getItem('section-state-' + sectionId) === 'true';
+            if (isMinimised) {
+                section.classList.add('section-minimised');
+            }
+        }
+    });
+});
+</script>
