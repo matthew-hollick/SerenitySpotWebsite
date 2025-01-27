@@ -10,7 +10,12 @@
         {{ range .images }}
         <article>
             <a href="{{ .src | relURL }}" class="image">
-                <img src="{{ .thumb | relURL }}" alt="{{ .alt }}" />
+                {{ partial "image" (dict 
+                    "src" (.thumb | relURL)
+                    "alt" (printf "The Serenity Spot - %s" .alt)
+                    "loading" "lazy"
+                    "class" "gallery-image"
+                    "context" .) }}
             </a>
             <div class="caption">
                 <h3>{{ .alt }}</h3>

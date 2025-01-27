@@ -1,0 +1,13 @@
+{{ $src := .src }}
+{{ $alt := .alt | default "The Serenity Spot - Professional Massage Therapy in Ash Vale" }}
+{{ $loading := .loading | default "lazy" }}
+{{ $class := .class | default "" }}
+
+<img 
+    src="{{ $src }}" 
+    alt="{{ $alt }}"
+    loading="{{ $loading }}"
+    {{ with $class }}class="{{ . }}"{{ end }}
+    {{ if .width }}width="{{ .width }}"{{ end }}
+    {{ if .height }}height="{{ .height }}"{{ end }}
+/>

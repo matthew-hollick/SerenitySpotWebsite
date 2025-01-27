@@ -1,0 +1,46 @@
+{{ with .Site.Data.legal }}
+<section class="wrapper {{ .style }}">
+    <div class="inner">
+        <h2>{{ .title }}</h2>
+        
+        {{ with .sections.privacy }}
+        <section>
+            <header>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+                <p class="small">Last updated: {{ .lastUpdated }}</p>
+            </header>
+            <div class="content">
+                {{ .content | markdownify }}
+            </div>
+        </section>
+        {{ end }}
+
+        {{ with .sections.cookies }}
+        <section>
+            <header>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+                <p class="small">Last updated: {{ .lastUpdated }}</p>
+            </header>
+            <div class="content">
+                {{ .content | markdownify }}
+            </div>
+        </section>
+        {{ end }}
+
+        {{ with .sections.terms }}
+        <section>
+            <header>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+                <p class="small">Last updated: {{ .lastUpdated }}</p>
+            </header>
+            <div class="content">
+                {{ .content | markdownify }}
+            </div>
+        </section>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

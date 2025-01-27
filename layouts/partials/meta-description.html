@@ -1,0 +1,13 @@
+{{- $description := "" -}}
+
+{{- if .Description -}}
+    {{- $description = .Description -}}
+{{- else if .Summary -}}
+    {{- $description = .Summary -}}
+{{- else if .IsHome -}}
+    {{- $description = "Professional massage therapy services in Ash Vale, Surrey. Specialising in holistic treatments for relaxation and wellness. Book your session with Clare today." -}}
+{{- else -}}
+    {{- $description = printf "The Serenity Spot - Professional massage therapy in Ash Vale. %s" .Title -}}
+{{- end -}}
+
+{{- $description | truncate 160 -}}

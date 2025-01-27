@@ -8,6 +8,12 @@ publishDir = "public"
 ## Hugo Built-in Features
 disableKinds = ["taxonomy", "section"]
 
+# Enable XML Sitemap
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 ## Site Parameters
 title = "Serenity Spot - Professional Massage Therapy"
 languageCode = "en-us"
@@ -29,3 +35,28 @@ languageCode = "en-us"
     facebook = "https://facebook.com/serenityspot"
     instagram = "https://www.instagram.com/stories/theserenityspotsurrey/"
     email = "clare@theserenityspot.co.uk"
+
+  # Business Information
+  [Params.business]
+    name = "The Serenity Spot"
+    telephone = "" # Add your business telephone
+    streetAddress = "" # Add your street address
+    addressLocality = "Ash Vale"
+    addressRegion = "Surrey"
+    postalCode = "GU12 5PD" # Add your postal code
+    latitude = "51.276115" # Add your latitude
+    longitude = "-0.722993" # Add your longitude
+    priceRange = "££"
+    
+    # Opening Hours (24-hour format)
+    [Params.business.hours]
+      monday = { opens = "09:00", closes = "17:00" }
+      tuesday = { opens = "09:00", closes = "17:00" }
+      wednesday = { opens = "09:00", closes = "17:00" }
+      thursday = { opens = "09:00", closes = "17:00" }
+      friday = { opens = "09:00", closes = "17:00" }
+
+  # Analytics
+  [Params.analytics]
+    googleAnalytics = "G-K38TT6CYSN" # Add your Google Analytics measurement ID (G-XXXXXXXXXX)
+    cookieConsent = true # Enable cookie consent banner

@@ -1,0 +1,29 @@
+title: "Quick Navigation"
+items:
+  - title: "Welcome"
+    id: "banner"
+    icon: "fas fa-home"
+  
+  - title: "Treatments"
+    id: "treatments"
+    icon: "fas fa-spa"
+  
+  - title: "Treatment Guide"
+    id: "treatment-guide"
+    icon: "fas fa-book"
+  
+  - title: "Gallery"
+    id: "gallery"
+    icon: "fas fa-images"
+  
+  - title: "Testimonials"
+    id: "testimonials"
+    icon: "fas fa-comments"
+  
+  - title: "Find Us"
+    id: "find-us"
+    icon: "fas fa-map-marker-alt"
+  
+  - title: "Legal"
+    id: "legal"
+    icon: "fas fa-gavel"

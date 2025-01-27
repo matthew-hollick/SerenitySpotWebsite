@@ -1,0 +1,74 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "{{ .Site.Params.business.name }}",
+  "image": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+  "description": "Professional massage therapy services in Ash Vale. Specialising in holistic treatments for relaxation and wellness.",
+  "@id": "{{ .Site.BaseURL }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.business.telephone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ .Site.Params.business.streetAddress }}",
+    "addressLocality": "{{ .Site.Params.business.addressLocality }}",
+    "addressRegion": "{{ .Site.Params.business.addressRegion }}",
+    "postalCode": "{{ .Site.Params.business.postalCode }}",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ .Site.Params.business.latitude }}",
+    "longitude": "{{ .Site.Params.business.longitude }}"
+  },
+  "priceRange": "{{ .Site.Params.business.priceRange }}",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "{{ .Site.Params.business.hours.monday.opens }}",
+      "closes": "{{ .Site.Params.business.hours.monday.closes }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "{{ .Site.Params.business.hours.tuesday.opens }}",
+      "closes": "{{ .Site.Params.business.hours.tuesday.closes }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "{{ .Site.Params.business.hours.wednesday.opens }}",
+      "closes": "{{ .Site.Params.business.hours.wednesday.closes }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "{{ .Site.Params.business.hours.thursday.opens }}",
+      "closes": "{{ .Site.Params.business.hours.thursday.closes }}"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "{{ .Site.Params.business.hours.friday.opens }}",
+      "closes": "{{ .Site.Params.business.hours.friday.closes }}"
+    }
+  ],
+  "sameAs": [
+    "{{ .Site.Params.social.facebook }}",
+    "{{ .Site.Params.social.instagram }}"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Holistic Massage",
+      "description": "Professional holistic massage therapy"
+    },
+    {
+      "@type": "Offer",
+      "name": "Relaxation Massage",
+      "description": "Relaxing massage therapy for stress relief and wellness"
+    }
+  ]
+}
+</script>
