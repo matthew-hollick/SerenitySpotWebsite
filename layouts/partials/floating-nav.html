@@ -19,8 +19,7 @@
 #floating-nav {
     position: fixed;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20px;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 10px;
@@ -29,7 +28,7 @@
 }
 
 #floating-nav .nav-toggle {
-    display: none;
+    display: block;
     color: white;
     text-align: center;
     cursor: pointer;
@@ -37,9 +36,14 @@
 }
 
 #floating-nav ul {
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+#floating-nav.active ul {
+    display: block;
 }
 
 #floating-nav li {
@@ -54,6 +58,7 @@
     padding: 5px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 
 #floating-nav a:hover {
@@ -69,20 +74,6 @@
 @media screen and (max-width: 736px) {
     #floating-nav {
         right: 10px;
-        top: 20px;
-        transform: none;
-    }
-
-    #floating-nav .nav-toggle {
-        display: block;
-    }
-
-    #floating-nav ul {
-        display: none;
-    }
-
-    #floating-nav.active ul {
-        display: block;
     }
 
     #floating-nav a {
