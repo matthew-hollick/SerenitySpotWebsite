@@ -26,7 +26,7 @@ sections:
       - Cookies for website functionality and analytics
       - Technical information about your device and internet connection
 
-      [Read Full Privacy Policy](/legal/privacy-policy)
+      [View Full Privacy Policy](#privacy-full)
 
   cookies:
     title: "Cookie Policy"
@@ -45,23 +45,188 @@ sections:
       - Improve our service
       - Enable certain website functions
 
-      [Read Full Cookie Policy](/legal/cookie-policy)
+      [View Full Cookie Policy](#cookies-full)
 
   terms:
     title: "Terms of Service"
-    description: "Terms and conditions for using our website and services"
+    description: "Our terms and conditions of service"
     lastUpdated: "27 January 2025"
     content: |
+      ## Overview
+
+      By using our services, you agree to these terms. Please read them carefully.
+
       ## Booking and Cancellation
 
-      - 24 hours' notice required for cancellations
-      - Late cancellations may be charged in full
-      - Please arrive 5-10 minutes before your appointment
+      - Appointments must be booked in advance
+      - 24-hour cancellation notice required
+      - Late arrivals may result in shortened treatment time
 
-      ## Health and Safety
+      [View Full Terms of Service](#terms-full)
 
-      - Provide accurate health information
-      - Inform us of any changes to your health
-      - Follow pre and post-treatment guidance
+  privacy-full:
+    title: "Full Privacy Policy"
+    description: "Complete details of our privacy policy"
+    lastUpdated: "27 January 2025"
+    content: |
+      ## Full Privacy Policy
 
-      [Read Full Terms of Service](/legal/terms-of-service)
+      ### 1. Information Collection and Use
+
+      We collect information to provide better services to our clients:
+
+      #### Personal Information
+      - Name, email address, phone number
+      - Health information relevant to treatments
+      - Appointment history and preferences
+      - Payment information (processed securely through our payment provider)
+
+      #### Technical Information
+      - Browser type and version
+      - Operating system
+      - IP address
+      - Device information
+      - Cookies and usage data
+
+      ### 2. How We Use Your Information
+
+      We use your information to:
+      - Book and manage your appointments
+      - Provide appropriate treatments
+      - Send appointment reminders
+      - Process payments
+      - Improve our services
+      - Comply with legal obligations
+
+      ### 3. Information Sharing
+
+      We never sell your personal information. We share information only:
+      - With your explicit consent
+      - To process payments
+      - To comply with legal obligations
+      - With service providers who assist our operations
+
+      ### 4. Data Security
+
+      We implement appropriate security measures to protect your information:
+      - Encryption of sensitive data
+      - Regular security assessments
+      - Staff training on data protection
+      - Secure storage systems
+
+      ### 5. Your Rights
+
+      You have the right to:
+      - Access your personal information
+      - Correct inaccurate information
+      - Request deletion of your information
+      - Withdraw consent for data processing
+      - Receive a copy of your data
+
+      ### 6. Contact Us
+
+      For privacy-related questions, please contact us through our website.
+
+  cookies-full:
+    title: "Full Cookie Policy"
+    description: "Complete details of our cookie policy"
+    lastUpdated: "27 January 2025"
+    content: |
+      ## Full Cookie Policy
+
+      ### 1. What Are Cookies
+
+      Cookies are small text files placed on your device when you visit our website. They help our website work efficiently and improve your experience.
+
+      ### 2. Types of Cookies We Use
+
+      #### Essential Cookies
+      - Required for website functionality
+      - Cannot be disabled
+      - No personal information stored
+
+      #### Analytics Cookies
+      - Help us understand how visitors use our site
+      - Anonymous usage data
+      - Can be disabled
+
+      #### Preference Cookies
+      - Remember your settings
+      - Improve your experience
+      - Can be disabled
+
+      ### 3. Managing Cookies
+
+      You can control cookies through your browser settings:
+      - Block all cookies
+      - Delete existing cookies
+      - Allow only certain cookies
+
+      ### 4. Third-Party Cookies
+
+      We use services that may set cookies:
+      - Google Analytics
+      - Payment processors
+      - Booking system
+
+      ### 5. Updates to This Policy
+
+      We may update this policy. Check back regularly for changes.
+
+  terms-full:
+    title: "Full Terms of Service"
+    description: "Complete terms and conditions"
+    lastUpdated: "27 January 2025"
+    content: |
+      ## Full Terms of Service
+
+      ### 1. Service Agreement
+
+      By booking our services, you agree to these terms.
+
+      ### 2. Booking and Appointments
+
+      #### Booking
+      - Appointments must be booked in advance
+      - Accurate personal and contact information required
+      - Health information must be provided when relevant
+
+      #### Cancellation Policy
+      - 24-hour notice required for cancellations
+      - Late cancellations may incur a fee
+      - No-shows will be charged in full
+
+      #### Arrival Time
+      - Arrive 5-10 minutes before appointment
+      - Late arrivals may result in shortened treatment
+      - Full payment required regardless of late arrival
+
+      ### 3. Health and Safety
+
+      #### Client Responsibility
+      - Disclose relevant health conditions
+      - Follow pre and post-treatment advice
+      - Notify us of any discomfort during treatment
+
+      #### Our Commitment
+      - Clean, safe environment
+      - Qualified practitioners
+      - Professional conduct
+
+      ### 4. Payment
+
+      - Payment required at time of service
+      - Accepted methods: card, cash
+      - Prices subject to change
+      - Gift certificates non-refundable
+
+      ### 5. Liability
+
+      We are not liable for:
+      - Personal belongings
+      - Pre-existing conditions
+      - Non-disclosed health issues
+
+      ### 6. Changes to Terms
+
+      We may update these terms. Check regularly for changes.
