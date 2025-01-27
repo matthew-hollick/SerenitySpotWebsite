@@ -2,3 +2,7 @@
 public/
 resources/
 .hugo_build.lock
+# Trivy cache
+.trivy/
+.trivycache/
+.pre-commit-trivy-cache/
