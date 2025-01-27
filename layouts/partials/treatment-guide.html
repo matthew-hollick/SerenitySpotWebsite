@@ -1,35 +1,26 @@
 <!-- Treatment Guide -->
-<section class="wrapper style1 align-center">
+<section class="wrapper style1 align-center" {{ with .id }}id="{{ . }}"{{ end }}>
     <div class="inner">
         <h2>{{ .title }}</h2>
-        <p class="major">{{ .description }}</p>
+        <p>{{ .description }}</p>
         <p>{{ .content }}</p>
-
-        <div class="items style1 medium">
+        
+        <div class="items style3 medium onscroll-fade-in">
             {{ range .sections }}
             <section>
-                <h3>{{ .condition }}</h3>
+                <header>
+                    <h3>{{ .condition }}</h3>
+                </header>
                 <div class="content">
-                    <h4>Beneficial for those experiencing:</h4>
                     <ul class="alt">
                         {{ range .symptoms }}
                         <li>{{ . }}</li>
                         {{ end }}
                     </ul>
-                    
-                    <h4>Recommended Treatments:</h4>
-                    <ul class="alt">
-                        {{ range .treatments }}
-                        <li>{{ . }}</li>
-                        {{ end }}
-                    </ul>
+                    <p><strong>Recommended:</strong> {{ .recommended }}</p>
                 </div>
             </section>
             {{ end }}
-        </div>
-
-        <div class="box">
-            <p><strong>Important Note:</strong> {{ .disclaimer }}</p>
         </div>
     </div>
 </section>
