@@ -19,15 +19,24 @@
     outline-offset: 2px;
 }
 
-/* Hide icons visually but keep them available for screen readers */
-.icon .label {
-    position: absolute;
-    width: 1px;
+/* Hide elements visually but keep them accessible to screen readers */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     height: 1px;
-    padding: 0;
-    margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    position: absolute;
     white-space: nowrap;
-    border: 0;
+    width: 1px;
+}
+
+/* Show the element when it receives focus */
+.visually-hidden:focus {
+    clip: auto;
+    clip-path: none;
+    height: auto;
+    overflow: visible;
+    position: static;
+    white-space: normal;
+    width: auto;
 }
