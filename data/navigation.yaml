@@ -5,7 +5,7 @@ items:
     icon: "fas fa-home"
   
   - title: "Treatments"
-    id: "treatments"
+    id: "menu"
     icon: "fas fa-spa"
   
   - title: "Treatment Guide"
