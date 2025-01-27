@@ -1,70 +1,6 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "checkov@latest": {
-      "last_modified": "2025-01-25T23:17:58Z",
-      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#checkov",
-      "source": "devbox-search",
-      "version": "3.2.355",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/b84apv4ji5g3y9vqryjc97ns3n6lqd1c-checkov-3.2.355",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/xvm3hqpplpsh9pj5rlp9afb0d07cc5si-checkov-3.2.355-dist"
-            }
-          ],
-          "store_path": "/nix/store/b84apv4ji5g3y9vqryjc97ns3n6lqd1c-checkov-3.2.355"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/2icqqbk1w5fpjl9j3n3v8mdqfsdkqv5i-checkov-3.2.355",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/lwz0ln3mcsk7mqj8rpj30hkzzvc12vfn-checkov-3.2.355-dist"
-            }
-          ],
-          "store_path": "/nix/store/2icqqbk1w5fpjl9j3n3v8mdqfsdkqv5i-checkov-3.2.355"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/qqd4b9swyn4aa3i3pyqp615rp1giajlk-checkov-3.2.355",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/61l1yvaqxhp8fi8gjgzb3rk0x7wlbj8b-checkov-3.2.355-dist"
-            }
-          ],
-          "store_path": "/nix/store/qqd4b9swyn4aa3i3pyqp615rp1giajlk-checkov-3.2.355"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/4s8zr46dlmp4mqn8r4wag9l1yq61rfvx-checkov-3.2.355",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/7wdw7i387clsyalming2lzaqjmc4d8mm-checkov-3.2.355-dist"
-            }
-          ],
-          "store_path": "/nix/store/4s8zr46dlmp4mqn8r4wag9l1yq61rfvx-checkov-3.2.355"
-        }
-      }
-    },
     "hugo@latest": {
       "last_modified": "2025-01-09T11:09:19Z",
       "resolved": "github:NixOS/nixpkgs/32af3611f6f05655ca166a0b1f47b57c762b5192#hugo",
@@ -110,6 +46,71 @@
             }
           ],
           "store_path": "/nix/store/6yvswihirak2nyj52w37mm0m3lrwvkvm-hugo-0.140.2"
+        }
+      }
+    },
+    "nodejs@latest": {
+      "last_modified": "2025-01-25T23:17:58Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#nodejs_23",
+      "source": "devbox-search",
+      "version": "23.6.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/29axir4ms4kg5ivy9gi493a0zpdlhgf5-nodejs-23.6.1",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/xfdfdffbchi433vv8yxw2m70wlyizwxw-nodejs-23.6.1-libv8"
+            }
+          ],
+          "store_path": "/nix/store/29axir4ms4kg5ivy9gi493a0zpdlhgf5-nodejs-23.6.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/iyjgxm33zsha6pajl5kz31sk59vi46i4-nodejs-23.6.1",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/2hnqy10ldk4y569i7b03fga6xizhawjz-nodejs-23.6.1-libv8"
+            }
+          ],
+          "store_path": "/nix/store/iyjgxm33zsha6pajl5kz31sk59vi46i4-nodejs-23.6.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3pkq98fxx3snwik291lbrjaqm6y1vq99-nodejs-23.6.1",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/0vvj5hwvkw4bwfli1ibgvq8xqyscxm49-nodejs-23.6.1-libv8"
+            }
+          ],
+          "store_path": "/nix/store/3pkq98fxx3snwik291lbrjaqm6y1vq99-nodejs-23.6.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0pkqh1lq6j9h93n1ajx6v9zy2pv6hx28-nodejs-23.6.1",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/cm187hrwxr4nkmffkwpmr7x6cccss20v-nodejs-23.6.1-libv8"
+            }
+          ],
+          "store_path": "/nix/store/0pkqh1lq6j9h93n1ajx6v9zy2pv6hx28-nodejs-23.6.1"
         }
       }
     },
@@ -231,70 +232,6 @@
             }
           ],
           "store_path": "/nix/store/dq6pni9c365rsfivm6iq7wzn3aigp94l-python3-3.9.21"
-        }
-      }
-    },
-    "python39Packages.safety@latest": {
-      "last_modified": "2022-12-17T09:19:40Z",
-      "resolved": "github:NixOS/nixpkgs/80c24eeb9ff46aa99617844d0c4168659e35175f#python39Packages.safety",
-      "source": "devbox-search",
-      "version": "2.3.5",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/2w26h6v9i1442fmrj668s3r38rigjmj1-python3.9-safety-2.3.5",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/8zggiicz7li6qwhibh3fncs286wjh66i-python3.9-safety-2.3.5-dist"
-            }
-          ],
-          "store_path": "/nix/store/2w26h6v9i1442fmrj668s3r38rigjmj1-python3.9-safety-2.3.5"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/8c9bp5v4rq6ri99vq7hhfx8y94lryy6i-python3.9-safety-2.3.5",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/4nh6g473asry61vg2v9dfm7cscy6rs3w-python3.9-safety-2.3.5-dist"
-            }
-          ],
-          "store_path": "/nix/store/8c9bp5v4rq6ri99vq7hhfx8y94lryy6i-python3.9-safety-2.3.5"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/bk242z9jlbh5m3nwd57hbgw0wjbp7xkr-python3.9-safety-2.3.5",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/wb7s63fvnhf2khrcad1pp71ly5xlcyzx-python3.9-safety-2.3.5-dist"
-            }
-          ],
-          "store_path": "/nix/store/bk242z9jlbh5m3nwd57hbgw0wjbp7xkr-python3.9-safety-2.3.5"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/i11siah860kxlxdz3ff6vj3pdn4g6bmk-python3.9-safety-2.3.5",
-              "default": true
-            },
-            {
-              "name": "dist",
-              "path": "/nix/store/ak9s01ia3q2m2625zsv6vjjc0f2psvvd-python3.9-safety-2.3.5-dist"
-            }
-          ],
-          "store_path": "/nix/store/i11siah860kxlxdz3ff6vj3pdn4g6bmk-python3.9-safety-2.3.5"
         }
       }
     },
