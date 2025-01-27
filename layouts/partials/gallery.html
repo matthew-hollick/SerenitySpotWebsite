@@ -1,30 +1,30 @@
 <!-- Gallery -->
-<section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
-    <div class="inner">
-        <h2>{{ .title }}</h2>
-        <p>{{ .description | safeHTML }}</p>
-    </div>
-
-    <!-- Gallery -->
-    <div class="gallery style2 medium lightbox onscroll-fade-in">
-        {{ range .images }}
-        <article>
-            <a href="{{ .src | relURL }}" class="image">
-                {{ partial "image" (dict 
-                    "src" (.thumb | relURL)
-                    "alt" (printf "The Serenity Spot - %s" .alt)
-                    "loading" "lazy"
-                    "class" "gallery-image"
-                    "context" .) }}
-            </a>
-            <div class="caption">
-                <h3>{{ .alt }}</h3>
-                <p>{{ .caption }}</p>
-                <ul class="actions fixed">
-                    <li><span class="button small">View</span></li>
-                </ul>
+<section class="wrapper style1 align-center" {{ with .id }}id="{{ . }}"{{ end }}>
+    {{ template "section-header" . }}
+    <div class="section-content">
+        <div class="inner">
+            <!-- Gallery -->
+            <div class="gallery style2 medium lightbox onscroll-fade-in">
+                {{ range .images }}
+                <article>
+                    <a href="{{ .src | relURL }}" class="image">
+                        {{ partial "image" (dict 
+                            "src" (.thumb | relURL)
+                            "alt" (printf "The Serenity Spot - %s" .alt)
+                            "loading" "lazy"
+                            "class" "gallery-image"
+                            "context" .) }}
+                    </a>
+                    <div class="caption">
+                        <h3>{{ .alt }}</h3>
+                        <p>{{ .caption }}</p>
+                        <ul class="actions fixed">
+                            <li><span class="button small">View</span></li>
+                        </ul>
+                    </div>
+                </article>
+                {{ end }}
             </div>
-        </article>
-        {{ end }}
+        </div>
     </div>
 </section>

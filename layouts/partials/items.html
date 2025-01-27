@@ -1,12 +1,14 @@
 <!-- Items -->
 <section class="wrapper style1 align-center" {{ with .id }}id="{{ . }}"{{ end }}>
-    <div class="inner">
-        {{ with .title }}<h2>{{ . }}</h2>{{ end }}
-        {{ with .content }}{{ . | safeHTML }}{{ end }}
-        <div class="items {{ .style }}">
-            {{ range .items }}
-                {{ partial "item" . }}
-            {{ end }}
+    {{ template "section-header" . }}
+    <div class="section-content">
+        <div class="inner">
+            {{ with .content }}{{ . | safeHTML }}{{ end }}
+            <div class="items {{ .style }}">
+                {{ range .items }}
+                    {{ partial "item" . }}
+                {{ end }}
+            </div>
         </div>
     </div>
 </section>

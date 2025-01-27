@@ -1,26 +1,26 @@
 <!-- Treatment Guide -->
 <section class="wrapper style1 align-center" {{ with .id }}id="{{ . }}"{{ end }}>
-    <div class="inner">
-        <h2>{{ .title }}</h2>
-        <p>{{ .description }}</p>
-        <p>{{ .content }}</p>
-        
-        <div class="items style3 medium onscroll-fade-in">
-            {{ range .sections }}
-            <section>
-                <header>
-                    <h3>{{ .condition }}</h3>
-                </header>
-                <div class="content">
-                    <ul class="alt">
-                        {{ range .symptoms }}
-                        <li>{{ . }}</li>
-                        {{ end }}
-                    </ul>
-                    <p><strong>Recommended:</strong> {{ .recommended }}</p>
-                </div>
-            </section>
-            {{ end }}
+    {{ template "section-header" . }}
+    <div class="section-content">
+        <div class="inner">
+            <p>{{ .content }}</p>
+            <div class="items style3 medium onscroll-fade-in">
+                {{ range .sections }}
+                <section>
+                    <header>
+                        <h3>{{ .condition }}</h3>
+                    </header>
+                    <div class="content">
+                        <ul class="alt">
+                            {{ range .symptoms }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                        <p><strong>Recommended:</strong> {{ .recommended }}</p>
+                    </div>
+                </section>
+                {{ end }}
+            </div>
         </div>
     </div>
 </section>

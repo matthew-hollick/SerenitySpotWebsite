@@ -52,6 +52,11 @@
     opacity: 0;
     margin: 0;
 }
+
+/* Ensure banner section is never minimised */
+.banner .section-toggle {
+    display: none;
+}
 </style>
 
 <script>
@@ -83,12 +88,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Restore state from localStorage
+        // Set default state to minimised unless stored otherwise
         const sectionId = section.id || '';
         if (sectionId) {
-            const isMinimised = localStorage.getItem('section-state-' + sectionId) === 'true';
-            if (isMinimised) {
+            const storedState = localStorage.getItem('section-state-' + sectionId);
+            if (storedState === null) {
+                // No stored state, use default (minimised)
                 section.classList.add('section-minimised');
+            } else {
+                // Use stored state
+                if (storedState === 'true') {
+                    section.classList.add('section-minimised');
+                }
             }
         }
     });
