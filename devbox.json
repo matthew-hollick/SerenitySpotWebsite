@@ -10,8 +10,6 @@
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null",
-      "pip install --user checkov",
-      "npm install -g pa11y"
     ],
     "scripts": {
       "test": [
