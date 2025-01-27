@@ -1,13 +1,28 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
-  "packages": ["hugo@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
+  "packages": [
+    "hugo@latest",
+    "pre-commit@latest",
+    "python39@latest",
+    "trivy@latest",
+    "nodejs@latest"
+  ],
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
+      "echo 'Welcome to devbox!' > /dev/null",
+      "pip install --user checkov",
+      "npm install -g pa11y"
     ],
     "scripts": {
       "test": [
         "echo \"Error: no test specified\" && exit 1"
+      ],
+      "security-check": [
+        "pre-commit run --all-files",
+        "trivy fs --severity HIGH,CRITICAL ."
+      ],
+      "accessibility-check": [
+        "pa11y http://localhost:1313 --reporter cli"
       ]
     }
   }

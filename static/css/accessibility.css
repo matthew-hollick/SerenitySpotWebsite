@@ -1,0 +1,33 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Ensure focus outline is visible */
+:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+/* Hide icons visually but keep them available for screen readers */
+.icon .label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

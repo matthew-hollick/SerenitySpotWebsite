@@ -1,6 +1,70 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "checkov@latest": {
+      "last_modified": "2025-01-25T23:17:58Z",
+      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#checkov",
+      "source": "devbox-search",
+      "version": "3.2.355",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b84apv4ji5g3y9vqryjc97ns3n6lqd1c-checkov-3.2.355",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/xvm3hqpplpsh9pj5rlp9afb0d07cc5si-checkov-3.2.355-dist"
+            }
+          ],
+          "store_path": "/nix/store/b84apv4ji5g3y9vqryjc97ns3n6lqd1c-checkov-3.2.355"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2icqqbk1w5fpjl9j3n3v8mdqfsdkqv5i-checkov-3.2.355",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/lwz0ln3mcsk7mqj8rpj30hkzzvc12vfn-checkov-3.2.355-dist"
+            }
+          ],
+          "store_path": "/nix/store/2icqqbk1w5fpjl9j3n3v8mdqfsdkqv5i-checkov-3.2.355"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qqd4b9swyn4aa3i3pyqp615rp1giajlk-checkov-3.2.355",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/61l1yvaqxhp8fi8gjgzb3rk0x7wlbj8b-checkov-3.2.355-dist"
+            }
+          ],
+          "store_path": "/nix/store/qqd4b9swyn4aa3i3pyqp615rp1giajlk-checkov-3.2.355"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4s8zr46dlmp4mqn8r4wag9l1yq61rfvx-checkov-3.2.355",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/7wdw7i387clsyalming2lzaqjmc4d8mm-checkov-3.2.355-dist"
+            }
+          ],
+          "store_path": "/nix/store/4s8zr46dlmp4mqn8r4wag9l1yq61rfvx-checkov-3.2.355"
+        }
+      }
+    },
     "hugo@latest": {
       "last_modified": "2025-01-09T11:09:19Z",
       "resolved": "github:NixOS/nixpkgs/32af3611f6f05655ca166a0b1f47b57c762b5192#hugo",
@@ -46,6 +110,239 @@
             }
           ],
           "store_path": "/nix/store/6yvswihirak2nyj52w37mm0m3lrwvkvm-hugo-0.140.2"
+        }
+      }
+    },
+    "pre-commit@latest": {
+      "last_modified": "2025-01-25T23:17:58Z",
+      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#pre-commit",
+      "source": "devbox-search",
+      "version": "4.0.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9lz1d1szzwzy6x242kk9px91pkdy7cd6-pre-commit-4.0.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/hi34jjdsbbhq5xh1q0w47a23jpqf6iac-pre-commit-4.0.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/9lz1d1szzwzy6x242kk9px91pkdy7cd6-pre-commit-4.0.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wnm7889axpdqqbl67n17kxw5sk31jjw5-pre-commit-4.0.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/qr97swbwvy1b3xp49xpqrv57vprqjwdq-pre-commit-4.0.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/wnm7889axpdqqbl67n17kxw5sk31jjw5-pre-commit-4.0.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/w7fwcza4vnyxlsw2ikqjinqsn02ks06j-pre-commit-4.0.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/s7hxrwkn34q92g8pzw17v05ml3v10yys-pre-commit-4.0.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/w7fwcza4vnyxlsw2ikqjinqsn02ks06j-pre-commit-4.0.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4x6p9yzvi0izpd3j4qj87z2d39lh0si6-pre-commit-4.0.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/m78p9134p8njvmi881zkfrskb7i7a9z7-pre-commit-4.0.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/4x6p9yzvi0izpd3j4qj87z2d39lh0si6-pre-commit-4.0.1"
+        }
+      }
+    },
+    "python39@latest": {
+      "last_modified": "2025-01-25T23:17:58Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#python39",
+      "source": "devbox-search",
+      "version": "3.9.21",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/v8v9kfdakmdyb7l9550q5n8zkf1i0fkg-python3-3.9.21",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/v8v9kfdakmdyb7l9550q5n8zkf1i0fkg-python3-3.9.21"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2dpmv393npsm7z1xrn2hmc64gdrs8nqw-python3-3.9.21",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/b6092dlfkz8ivacv25c17q3phldr90ih-python3-3.9.21-debug"
+            }
+          ],
+          "store_path": "/nix/store/2dpmv393npsm7z1xrn2hmc64gdrs8nqw-python3-3.9.21"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r9m49jnwjnmjnwfbnvyy97rm8bq92961-python3-3.9.21",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/r9m49jnwjnmjnwfbnvyy97rm8bq92961-python3-3.9.21"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dq6pni9c365rsfivm6iq7wzn3aigp94l-python3-3.9.21",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/klrhhnqj67q9340rzi7jacsg37mgn7i4-python3-3.9.21-debug"
+            }
+          ],
+          "store_path": "/nix/store/dq6pni9c365rsfivm6iq7wzn3aigp94l-python3-3.9.21"
+        }
+      }
+    },
+    "python39Packages.safety@latest": {
+      "last_modified": "2022-12-17T09:19:40Z",
+      "resolved": "github:NixOS/nixpkgs/80c24eeb9ff46aa99617844d0c4168659e35175f#python39Packages.safety",
+      "source": "devbox-search",
+      "version": "2.3.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2w26h6v9i1442fmrj668s3r38rigjmj1-python3.9-safety-2.3.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/8zggiicz7li6qwhibh3fncs286wjh66i-python3.9-safety-2.3.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/2w26h6v9i1442fmrj668s3r38rigjmj1-python3.9-safety-2.3.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8c9bp5v4rq6ri99vq7hhfx8y94lryy6i-python3.9-safety-2.3.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/4nh6g473asry61vg2v9dfm7cscy6rs3w-python3.9-safety-2.3.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/8c9bp5v4rq6ri99vq7hhfx8y94lryy6i-python3.9-safety-2.3.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bk242z9jlbh5m3nwd57hbgw0wjbp7xkr-python3.9-safety-2.3.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/wb7s63fvnhf2khrcad1pp71ly5xlcyzx-python3.9-safety-2.3.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/bk242z9jlbh5m3nwd57hbgw0wjbp7xkr-python3.9-safety-2.3.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i11siah860kxlxdz3ff6vj3pdn4g6bmk-python3.9-safety-2.3.5",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/ak9s01ia3q2m2625zsv6vjjc0f2psvvd-python3.9-safety-2.3.5-dist"
+            }
+          ],
+          "store_path": "/nix/store/i11siah860kxlxdz3ff6vj3pdn4g6bmk-python3.9-safety-2.3.5"
+        }
+      }
+    },
+    "trivy@latest": {
+      "last_modified": "2025-01-25T23:17:58Z",
+      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#trivy",
+      "source": "devbox-search",
+      "version": "0.58.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9xkh1vqzqm3y3a1hpkbrq81f44418nbf-trivy-0.58.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9xkh1vqzqm3y3a1hpkbrq81f44418nbf-trivy-0.58.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0pg2q27a54a98mjaar6yq0p3g8f6zi66-trivy-0.58.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0pg2q27a54a98mjaar6yq0p3g8f6zi66-trivy-0.58.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/armkdil7774yb45s0k3db924xm9574xv-trivy-0.58.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/armkdil7774yb45s0k3db924xm9574xv-trivy-0.58.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/p6p5519vr6pcjicv5whbsfm8627s28yv-trivy-0.58.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/p6p5519vr6pcjicv5whbsfm8627s28yv-trivy-0.58.2"
         }
       }
     }

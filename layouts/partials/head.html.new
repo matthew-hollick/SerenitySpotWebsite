@@ -1,0 +1,30 @@
+<head>
+	<title>{{ if .IsHome }}{{ .Site.Title }} - {{ .Site.Params.description }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
+	<meta name="author" content="{{ .Site.Params.author }}">
+	{{ if .Site.Params.favicon }}
+	{{ partial "favicon" }}
+	{{ end }}
+	
+	<!-- CSS -->
+	{{ if hugo.IsServer }}
+	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/menu.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/treatment-guide.css">
+	{{ else }}
+	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "enableSourceMap" false) }}
+	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/menu.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/treatment-guide.css">
+	{{ end }}
+	{{ if hugo.IsServer }}
+	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
+	<noscript><link rel="stylesheet" href="{{ ($noscript).RelPermalink }}" /></noscript>
+	{{ else }}
+	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
+	<noscript><link rel="stylesheet" href="{{ ($noscript | minify).RelPermalink }}" /></noscript>
+	{{ end }}
+</head>
