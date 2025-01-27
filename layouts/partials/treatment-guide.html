@@ -1,6 +1,14 @@
 <!-- Treatment Guide -->
 <section class="wrapper style1 align-center" {{ with .id }}id="{{ . }}"{{ end }}>
-    {{ template "section-header" . }}
+    <div class="section-header">
+        <div class="section-title">
+            <h2>{{ .title }}</h2>
+            <p>{{ .description }}</p>
+        </div>
+        <button class="section-toggle" aria-label="Toggle section">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
     <div class="section-content">
         <div class="inner">
             <p>{{ .content }}</p>
