@@ -6,6 +6,7 @@
             {{ with .facebook }}<li><a target="_blank" href="{{ . }}" class="icon brands style2 fa-facebook" aria-label="Facebook"><span class="label">Facebook</span></a></li>{{ end }}
             {{ with .instagram }}<li><a target="_blank" href="{{ . }}" class="icon brands style2 fa-instagram" aria-label="Instagram"><span class="label">Instagram</span></a></li>{{ end }}
             {{ with .email }}<li><a target="_blank" href="mailto:{{ . }}" class="icon style2 fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>{{ end }}
+            {{ with .whatsapp }}<li><a target="_blank" href="https://wa.me/{{ . }}" class="icon brands style2 fa-whatsapp" aria-label="Whatsapp"><span class="label">Whatsapp</span></a></li>{{ end }}
             {{ end }}
         </ul>
         <p class="copyright">Hugo theme by <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a><span class="footerspacer icon fa-diamond"></span>

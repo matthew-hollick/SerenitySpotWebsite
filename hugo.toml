@@ -35,11 +35,13 @@ languageCode = "en-us"
     facebook = "https://facebook.com/serenityspot"
     instagram = "https://www.instagram.com/stories/theserenityspotsurrey/"
     email = "clare@theserenityspot.co.uk"
+    whatsApp = "https://wa.me/447584485702"
 
   # Business Information
   [Params.business]
     name = "The Serenity Spot"
-    telephone = "" # Add your business telephone
+    telephone = "+44 7584 485702" # Add your business telephone
+    whatsApp = "+44 7584 485702"
     streetAddress = "" # Add your street address
     addressLocality = "Ash Vale"
     addressRegion = "Surrey"
