@@ -39,7 +39,7 @@
   - [ ] Review and finalise content
 
 ## Future Considerations
-- [ ] Add testimonials section
+- [x] Add testimonials section
 - [ ] Create a blog section for wellness tips
 - [ ] Add a gift voucher purchase system
 - [ ] Implement multi-language support if needed
@@ -66,12 +66,12 @@
   - [ ] Implement Permissions-Policy header
 
 ## Business Information
-- [ ] Complete business details in hugo.toml
-  - [ ] Add business telephone number
-  - [ ] Include complete street address
-  - [ ] Set up proper opening hours
+- [x] Complete business details in hugo.toml
+  - [x] Add business telephone number
+  - [x] Include complete street address
+  - [x] Set up proper opening hours
   - [ ] Consider adding emergency contact information
-  - [ ] Add cancellation policy details
+  - [x] Add cancellation policy details
 
 ## Accessibility Improvements
 - [ ] Enhance website accessibility
