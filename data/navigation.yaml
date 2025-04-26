@@ -23,7 +23,3 @@ items:
   - title: "Find Us"
     id: "find-us"
     icon: "fas fa-map-marker-alt"
-  
-  - title: "Legal"
-    id: "legal"
-    icon: "fas fa-gavel"

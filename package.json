@@ -1,0 +1,23 @@
+{
+  "name": "serenityspotwebsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-hollick/SerenitySpotWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthew-hollick/SerenitySpotWebsite/issues"
+  },
+  "homepage": "https://github.com/matthew-hollick/SerenitySpotWebsite#readme",
+  "description": "",
+  "devDependencies": {
+    "pa11y": "^8.0.0"
+  }
+}

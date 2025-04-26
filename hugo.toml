@@ -16,7 +16,7 @@ disableKinds = ["taxonomy", "section"]
 
 ## Site Parameters
 title = "Serenity Spot - Professional Massage Therapy"
-languageCode = "en-us"
+languageCode = "en-gb"
 
 [Params]
   # Story theme parameters
@@ -61,4 +61,4 @@ languageCode = "en-us"
   # Analytics
   [Params.analytics]
     googleAnalytics = "G-K38TT6CYSN" # Add your Google Analytics measurement ID (G-XXXXXXXXXX)
-    cookieConsent = true # Enable cookie consent banner
+    cookieConsent = false # Disable cookie consent banner

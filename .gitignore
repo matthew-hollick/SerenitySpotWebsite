@@ -6,3 +6,5 @@ resources/
 .trivy/
 .trivycache/
 .pre-commit-trivy-cache/
+node_modules/
+package-lock.json
