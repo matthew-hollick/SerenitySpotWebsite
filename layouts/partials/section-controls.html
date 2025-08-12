@@ -23,17 +23,18 @@
 }
 
 .section-toggle {
-    background: none;
-    border: none;
-    color: inherit;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: #333;
     cursor: pointer;
     padding: 0.5em;
     font-size: 1.2em;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.2s ease;
 }
 
 .section-toggle:hover {
-    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .section-minimised .section-toggle {

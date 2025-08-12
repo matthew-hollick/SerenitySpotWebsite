@@ -1,7 +1,0 @@
-[tools]
-hugo-extended = "latest"
-node = "latest"
-pre-commit = "latest"
-python = "latest"
-trivy = "latest"
-uv = "latest"
